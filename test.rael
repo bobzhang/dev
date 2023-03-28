@@ -1,0 +1,24 @@
+
+type t struct {
+    x : int 
+    y : int
+}
+
+type slice enum {
+    A 
+    B (int)
+}
+
+function hello( u : t) : int {
+    let x = u.x
+    u.x + u.y + u.x   
+   
+}
+
+function init {
+    output_int(hello({x:2,y:3}))
+}
+
+function init {
+    ()
+}
